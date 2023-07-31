@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
@@ -9,10 +10,10 @@ function classNames(...classes) {
 export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [navigation, setNavigation] = useState([
-    { name: 'Inicio', href: '#', current:false },
-    { name: 'Nosotros', href: '#', current:false },
-    { name: 'Disponibles', href: '#', current:false },
-    { name: 'Contacto', href: '#', current:false },
+    { name: 'Inicio', href: '#inicio', current:false },
+    { name: 'Nosotros', href: '#nosotros', current:false },
+    { name: 'Disponibles', href: '#disponibles', current:false },
+    { name: 'Contacto', href: '#contacto', current:false },
   ])
 
   const handleLinkClick = (clickedItem) => {
@@ -68,7 +69,7 @@ export default function NavBar() {
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#f7f7f7] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>

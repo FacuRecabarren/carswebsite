@@ -31,24 +31,26 @@ const features = [
 export default function Stats() {
 
   return (
-    <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <p className="text-center pb-16 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+    <div className='bg-gradient-to-tr from-[#D33658] to-[#D9043D]'>
+        <div className="mx-auto mt-10 max-w-3xl md:mt-24 lg:w-full py-10 px-10 lg:px-0">
+          <p className="text-center pb-16 text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Más de 30 años de trayectoria en Mendoza
           </p>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {features.map((feature) => (
                 <div className='text-center' key={feature.name}>
                     <div className="flex-col justify-around items-center gap-4">
-                        <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-500 sm:w-12 sm:h-12">
-                            <feature.icon className="w-12 p-2 text-white" aria-hidden="true" />
+                        <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-xl shadow-sombra-imagenes bg-white sm:w-12 sm:h-12">
+                            <feature.icon className="w-12 p-2 text-[#A60311]" aria-hidden="true" />
                         </div>
-                            <p className='text-2xl font-bold text-deep-purple-accent-400'>{feature.name}</p>
-                            <p className="text-gray-700">{feature.description}</p>
+                            <p className='text-2xl text-white font-bold text-deep-purple-accent-400'>{feature.name}</p>
+                            <p className="text-white opacity-75">{feature.description}</p>
                     </div>
                 </div>
             ))}
           </div>
         </div>
+    </div>
     // <div className='mx-auto max-w-7xl px-6 lg:px-8 mt-16'>
     //   <h2 className='text-center mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>Más de 30 años de trayectoria en Mendoza</h2>
     //   <div className='flex-row md:flex md:justify-center md:items-center gap-16 my-10'>

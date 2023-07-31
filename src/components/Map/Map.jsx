@@ -15,11 +15,11 @@ export default function Map() {
       });
 
   return (
-    <div className="md:w-1/2">
+    <div className="md:w-1/2 z-0 rounded-xl px-8">
       <MapContainer
         center={[-32.89084, -68.82717]}
         zoom={13}
-        className='h-[20rem] w-full'
+        className='h-[20rem] w-full rounded-xl shadow-sombra-imagenes px-4'
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" // URL del proveedor de mapas (en este caso, OpenStreetMap)

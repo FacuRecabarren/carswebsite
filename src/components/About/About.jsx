@@ -1,4 +1,7 @@
-import { ArrowsRightLeftIcon, ClipboardDocumentListIcon, CreditCardIcon, UsersIcon } from '@heroicons/react/24/outline'
+import { ArrowsRightLeftIcon, ClipboardDocumentListIcon, CreditCardIcon, UsersIcon } from '@heroicons/react/24/outline';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const features = [
   {
@@ -28,12 +31,20 @@ const features = [
 ]
 
 export default function About() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Duración de la animación (en milisegundos)
+      once: true, // Solo animar una vez
+      easing: 'ease-in-out', // Función de tiempo de la animación
+      // Aquí puedes agregar más opciones de configuración según tus necesidades
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className="bg-white">
+    <div id='nosotros' data-aos="fade" data-aos-duration="1000" className="bg-white pt-24">
       <div className="mx-auto px-6 lg:px-8">
-      <div className="absolute inset-x-[40rem] -bottom-2 md:bottom-10 -z-10 transform-gpu blur-[rem] overflow-hidden sm:-top-14" aria-hidden="true">
-            <div className="relative left-[15rem] h-[10rem] md:h-[15rem] lg:h-[15rem] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#D9043D] to-[#A60311] opacity-70 md:left-[calc(100%-24rem)] lg:left-[calc(100%-5rem)] lg:w-[100rem] sm:w-[72.1875rem]"></div>
-            </div>
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             ¿Por qué elegirnos?
@@ -43,7 +54,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className='bg-gradient-to-tr from-[#D9043D] to-[#A60311] opacity-80'>
+      <div className='bg-gradient-to-tr from-[#D33658] to-[#D9043D]'>
         <div className="mx-auto mt-10 max-w-3xl md:mt-24 lg:w-full py-10 px-10 lg:px-0">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 md:max-w-none md:grid-cols-2 md:gap-y-16">
             {features.map((feature) => (

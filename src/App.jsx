@@ -17,11 +17,11 @@ const App = () => {
       <CarouselCars/>
       <Stats/>
       <Contact/>
-      <div className='md:flex justify-center items-center'>
+      <div className='sm:flex justify-center items-center bg-[#D9043D] rounded-tl-full sm:rounded-none sm:bg-transparent sm:bg-[url(https://res.cloudinary.com/dreso9ye9/image/upload/v1690699632/wave-haikei_5_t9f7ym.svg)] sm:py-4 py-0'>
         <Footer/>
         <Map/>
       </div>
-      <p className='text-center h-24 flex justify-center items-center'>© 2023 Mendoza Automotores</p>
+      <p className='bg-[#D9043D] text-center text-sm text-white h-24 flex justify-center items-center'>© 2023 Mendoza Automotores</p>
     </div>
   )
 }

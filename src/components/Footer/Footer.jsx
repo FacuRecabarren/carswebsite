@@ -5,45 +5,45 @@ import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineMail, AiOutlineWhatsApp
 export default function Footer() {
 
   return (
-    <div className="md:w-1/2 flex justify-center items-center">
-        <div>
-              <div className="md:mx-8 sm:gap-2 sm:px-1 w-80 flex justify-start items-center gap-4 bg-gradient-to-b from-morado-poco-claro to bg-morado-muy-claro my-4 py-2 pl-2 rounded-xl shadow-sombra-bg hover:scale-105 duration-300 cursor-pointer">
+    <div className="md:w-1/2 flex justify-center items-center px-8">
+        <div className='w-[25rem]'>
+              <div className="bg-white flex justify-start items-center w-full gap-4 py-2 pl-2 px-2 my-4 rounded-xl shadow-sombra-imagenes hover:border-[#D9043D] hover:border-l-4 hover:border-r-4 duration-100 cursor-pointer">
                 <div className="w-10">
-                  <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1685385297/icons8-geo-cerca-96_ummduq.png" className="w-10 object-cover"/>   
+                  <AiOutlineWhatsApp className="text-4xl object-cover"/>
                 </div>
                 <div>
-                  <p className="text-morado-oscuro font-bold">Ubicación</p>
-                  <p className="text-morado-oscuro text-sm text-opacity-60">Mendoza, Argentina</p>
+                  <p className="text-morado-oscuro font-bold text-[#D9043D]">WhatsApp</p>
+                  <p className="text-morado-oscuro text-sm">+542616367289</p>
                 </div>
               </div>
             
-              <div className="md:mx-8 sm:gap-2 sm:px-1 w-80 flex justify-start items-center gap-4 bg-gradient-to-b from-morado-poco-claro to bg-morado-muy-claro my-4 py-2 pl-2 rounded-xl shadow-sombra-bg hover:scale-105 duration-300 cursor-pointer">
+              <div className="bg-white flex justify-start items-center w-full gap-4 py-2 pl-2 px-2 my-4 rounded-xl shadow-sombra-imagenes hover:border-[#D9043D] hover:border-l-4 hover:border-r-4 duration-100 cursor-pointer">
                 <div className="w-10">
-                    <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1690500565/icons8-instagram_rqrgnp.svg" className="w-10 object-cover"/>
+                  <AiOutlineInstagram className="text-4xl object-cover"/>
                 </div>
                 <div>
-                  <p className="text-morado-oscuro font-bold">Instagram</p>
-                  <p className="text-morado-oscuro text-sm text-opacity-60">@mendoza_automotores</p>
+                  <p className="text-morado-oscuro font-bold text-[#D9043D]">Instagram</p>
+                  <p className="text-morado-oscuro text-sm">@mendoza_automotores</p>
                 </div>
               </div>
 
-              <div className="md:mx-8 sm:gap-2 sm:px-1 w-80 flex justify-start items-center gap-4 bg-gradient-to-b from-morado-poco-claro to bg-morado-muy-claro my-4 py-2 pl-2 rounded-xl shadow-sombra-bg hover:scale-105 duration-300 cursor-pointer">
+              <div className="bg-white flex justify-start items-center w-full gap-4 py-2 pl-2 px-2 my-4 rounded-xl shadow-sombra-imagenes hover:border-[#D9043D] hover:border-l-4 hover:border-r-4 duration-100 cursor-pointer">
                 <div className="w-10">
-                    <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1690500720/icons8-facebook_y3yarn.svg" className="w-10 object-cover"/>
+                    <AiOutlineFacebook className="text-4xl object-cover"/>
                 </div>
                 <div>
-                  <p className="text-morado-oscuro font-bold">Facebook</p>
-                  <p className="text-morado-oscuro text-sm text-opacity-60">@mendoza_automotores</p>
+                  <p className="text-morado-oscuro font-bold text-[#D9043D]">Facebook</p>
+                  <p className="text-morado-oscuro text-sm">@mendoza_automotores</p>
                 </div>
               </div>
             
-              <div className="md:mx-8 sm:gap-2 sm:px-1 w-80 flex justify-start items-center gap-4 bg-gradient-to-b from-morado-poco-claro to bg-morado-muy-claro my-4 py-2 pl-2 rounded-xl shadow-sombra-bg hover:scale-105 duration-300 cursor-pointer">
+              <div className="bg-white flex justify-start items-center w-full gap-4 py-2 pl-2 px-2 my-4 rounded-xl shadow-sombra-imagenes cursor-pointer hover:border-[#D9043D] hover:border-l-4 hover:border-r-4 duration-100">
                 <div className="w-10">
-                  <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1685055099/icons8-gmail_qidngb.svg" className="w-9 object-cover"/>
+                  <AiOutlineMail className="text-4xl object-cover"/>
                 </div>
                 <div>
-                  <p className="text-morado-oscuro font-bold">Mail</p>
-                  <p className="text-morado-oscuro text-sm text-opacity-60">mdzautomotores@gmail.com</p>
+                  <p className="text-morado-oscuro font-bold text-[#D9043D]">Mail</p>
+                  <p className="text-morado-oscuro text-sm">mdzautomotores@gmail.com</p>
                 </div>
               </div>
         </div>
