@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai';
 
 
@@ -19,7 +18,7 @@ export default function Footer() {
               </div>
           </a>
 
-          <a href="https://www.instagram.com/facu_reca/">
+          <a href="https://www.instagram.com/facu_reca/" target='__blank'>
               <div className="bg-white flex justify-start items-center w-full gap-4 py-2 pl-2 px-2 my-4 rounded-xl shadow-sombra-imagenes hover:border-[#D9043D] hover:border-l-4 hover:border-r-4 duration-100 cursor-pointer">
                 <div className="w-10">
                   <AiOutlineInstagram className="text-4xl object-cover"/>
